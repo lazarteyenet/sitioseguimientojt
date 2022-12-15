@@ -12,7 +12,7 @@
         </div>
     @endif
 
-    <div class="btn btn-success d-grid fs-5 mb-2">Registrar nuevo seguimiento...</div>
+    <div class="btn btn-dark d-grid fs-5 mb-2">Registrar nuevo seguimiento...</div>
 
     <form action="{{route('Estudiante.xRegistrar2')}}" method="post" class="d-grid gap-2">
         @csrf
@@ -22,8 +22,35 @@
                 El id es requerido
             </div>
         @enderror
+        @error('traAct')
+            <div class="alert alert-danger">
+                El trebajo actual es requerido
+            </div>
+        @enderror
 
-        
+        @error('ofiAct')
+            <div class="alert alert-danger">
+                El oficio actual es requerido
+            </div>
+        @enderror
+
+        @error('satEst')
+            <div class="alert alert-danger">
+                Satisfaccion es requerido
+            </div>
+        @enderror
+        @error('fecSeg')
+            <div class="alert alert-danger">
+                la fecha es requerido
+            </div>
+        @enderror
+        @error('estSeg')
+            <div class="alert alert-danger">
+            Estado del Seguimiento es requerido
+            </div>
+        @enderror
+
+
 
         <input type="text" name="idEst" placeholder="idEst" value="{{ old('idEst')}}" class="form-control mb-2">
         

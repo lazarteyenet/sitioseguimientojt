@@ -31,15 +31,15 @@ Route::delete('/eliminar/{id}', [PagesController::class, 'fnEliminar'])->name('E
 
 
 
-Route::post('/', [PagesController::class, 'fnRegistrar2'])->name('Estudiante.xRegistrar2');
+Route::post('Registrar/', [PagesController::class, 'fnRegistrar2'])->name('Estudiante.xRegistrar2');
 
 Route::get('/Seguimiento', [PagesController::class, 'fnSeguimiento'])->name('xSeguimiento');
-Route::get('/detalle/{id}', [PagesController::class, 'fnEstDetalle2'])->name('Seguimiento.xDetalle');
+Route::get('/detalleseg/{id}', [PagesController::class, 'fnEstDetalle2'])->name('Seguimiento.xDetalle');
 
-Route::get('/actualizar/{id}', [PagesController::class, 'fnEstActualizar2'])->name('Seguimiento.xActualizar');
-Route::put('/actualizar/{id}', [PagesController::class, 'fnUpdate2'])->name('Seguimiento.xUpdate');
+Route::get('/actualizarseg/{id}', [PagesController::class, 'fnEstActualizar2'])->name('Seguimiento.xActualizar');
+Route::put('/actualizarseg/{id}', [PagesController::class, 'fnUpdate2'])->name('Seguimiento.xUpdate');
 
-Route::delete('/eliminar/{id}', [PagesController::class, 'fnEliminar2'])->name('Seguimiento.xEliminar');
+Route::delete('/eliminarseg/{id}', [PagesController::class, 'fnEliminar2'])->name('Seguimiento.xEliminar');
 
 
 

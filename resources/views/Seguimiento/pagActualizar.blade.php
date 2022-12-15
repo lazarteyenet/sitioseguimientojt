@@ -12,7 +12,7 @@
         </div>
     @endif
 
-    <div class="btn btn-success d-grid fs-5 mb-2">Registrar nuevo seguimiento...</div>
+    <div class="btn btn-dark d-grid fs-5 mb-2">Registrar nuevo seguimiento...</div>
 
     <form action="{{route('Seguimiento.xUpdate', $xActAlumnos->id)}}" method="post" class="d-grid gap-2">
     @method('PUT')    
@@ -68,7 +68,7 @@
         
 
 
-        <button class="btn btn-warning" type="submit">Actualizar</button>
+        <button class="btn btn-secondary" type="submit">Actualizar</button>
     </form>
 
    
